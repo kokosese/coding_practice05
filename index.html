@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanetHunters</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v15.0" nonce="5ksC6RpM"></script>    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+   
+    
+    <header>
+        <div class="loading">
+            <div class="loading-animation">
+                <div class="atom-spinner">
+                    <div class="spinner-inner">
+                      <div class="spinner-line"></div>
+                      <div class="spinner-line"></div>
+                      <div class="spinner-line"></div>
+                      <!--Chrome renders little circles malformed :(-->
+                      <div class="spinner-circle">
+                        &#9679;
+                      </div>
+                    </div>
+                  </div>
+                  <p class="loading-text">Loding</p>
+            </div>
+            
+
+        </div>
+        
+        
+       
+        <div class="header-inner">
+            <h1 class="site-title"><a href="#"><img src="img/Necopon games@2x.png" alt=""></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#story">STORY</a></li>
+                    <li><a href="#trailer">TRAILER</a></li>
+                    <li><a class="header-btn btn" href="#">PLAY NOW</a></li>
+                </ul>
+               
+            </nav>
+
+        </div>
+       
+        <div class="audio">
+            <div class="audio-btn">
+                <button id="audio-btn-play">
+                    <span class="audio-btn-play-text">SOUND ON</span>
+                    <span class="material-icons audio-icon">volume_up</span>
+                </button>
+            </div>
+            <audio id="audio-js" loop>
+                <source src="audio/audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+       
+       
+    </header>
+    <div class="mainvisual">
+        <div class="video">
+            <video src="video/video.mp4" playsinline muted autoplay loop></video>
+        </div>
+        <section class="mv">
+            <div class="mv-area">
+                <div class="mv-text">
+                    <p class="mv-text-game">VR GAME</p>
+                    <p class="mv-text-planet">Planet<br>Hunters</p>
+                    <p class="mv-text-planet-ja">惑星を奪還せよ</p>
+                    <a  class="btn" href="#">PLAY NOW</a>
+                </div>
+            </div>
+            <div class="news-box">
+                <p><span class="news-box-date">2030.02.02</span><span class="news-box-body">バージョン5.6リリース：アバター・アイテム大量追加</span></p>
+            </div>
+            <div class="scrolldown"><span>Scroll</span></div>
+    
+        </section>
+
+    </div>
+    
+    
+    <main>
+        <section id="story" >
+            <div class="story-box1"></div>
+            <div class="wrapper">
+               
+            <div class="story-content">
+                <div class="story-content-text">
+                    <h2 class="sec-title">STORY</h2>
+                    <p class="story-content-text-title">奪われた故郷の星を取り戻せ <br> 壮大なSFファンタジー</p>
+                    <p class="story-content-text-body">銀河歴222年、惑星ネコチャンは、ボスネコ将軍の率いる軍の反乱により完全に制圧された。将軍の側近マンチカンは軍政府に従わない人間を辺境の星ニャゴーへ強制的に追放。食料や資源の乏しいニャゴーでは多くの難民が発生し飢餓に苦しんでいた。ニャゴーのスラム街で育った孤児の姉弟がいた。
+                        姉のミケと弟のタマは母親をボスネコ将軍に殺された事実を知る。母の復讐のため、そして故郷の惑星ネコチャンを奪還すべく、ミケとタマはいま行動に出る！</p>
+                </div>
+                <div class="story-content-img">
+                    <img src="img/story.jpg" alt="">
+                </div>
+                
+            </div>
+            <div class="story-content story-content2">
+                <div class="story-content-img">
+                    <img src="img/story2.jpg" alt="">
+                </div>
+                <div class="story-content-text">
+                    <p class="story-content-text-title">隠された陰謀を暴け  <br>衝撃的な事実に驚愕</p>
+                    <p class="story-content-text-body">ミケとタマはネコジャラシ作戦により軍政府の最新鋭の小型船チュールを奪うことに成功。チュールのハイテンションワープ星間航行により惑星ネコチャンへあとわずか３時間で到着という時、小惑星帯アビシニアンで謎の救難信号を受信する。意外にも信号の発信源はボスネコ将軍だった。彼は今にも絶えそうなかすれた声で「私はおまえたちミケとタマの父親なのだ」と語る。その瞬間、ミケとタマの育ての親同然で仲間のはずのホワイトオッドアイがタマの背中を刀で切り裂いたのだった......</p>
+                </div>
+            </div>
+            
+
+            </div>
+            <div class="story-box2"></div>
+            
+        </section>
+        <div class="cta">
+            <div class="wrapper">
+                <p class="cta-title">ARE YOU READY TO FIGHT?</p>
+                <a class="btn" href="#">PLAY NOW</a>
+            </div>
+
+        </div>
+        <section id="trailer">
+            <div class="trailer-box1"></div>
+            <div class="wrapper">
+                <h2 class="sec-title">TRAILER</h2>
+                <div class="trailer-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RO_RRKTYzUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </iframe>
+                </div>
+            </div>
+            <div class="trailer-box2"></div>
+        </section>
+        <div class="cta">
+            <div class="wrapper">
+                <p class="cta-title">ARE YOU READY TO FIGHT?</p>
+                <a class="btn" href="#">PLAY NOW</a>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-box"> </div>
+        <div class="footer-inner">
+            <ul>
+                <li class="">
+                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+                  </li>
+                  <li class="">
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-size="large"	>ツイート</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </li>
+                  <li>
+                    <div class="line-it-button" data-lang="ja" data-type="share-b" data-env="REAL" data-url="https://developers.line.biz/ja/docs/line-social-plugins/install-guide/using-line-share-buttons/" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div>
+                    <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+                  </li>
+            </ul>
+            <p>©Necopon games</p>
+            <div class="footer-btn">
+                <a class="footer-btn-sp btn" href="#">PLAY NOW</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
